@@ -1,16 +1,30 @@
 import fetch from 'isomorphic-unfetch';
+import PropTypes from 'prop-types';
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 
 import config from '../config';
 
 class PayButton extends React.Component {
-  static async onToken(token) {
+  constructor(props) {
+    super(props);
+     // This binding is necessary to make `this` work in the callback
+    this.onToken = this.onToken.bind(this);
+  }
+
+  async onToken(token) {
     const res = await fetch(config.stripe.apiUrl, {
       method: 'POST',
-      body: JSON.stringify(token),
+      body: JSON.stringify({
+        token,
+        charge: {
+          amount: this.props.amount,
+          currency: config.stripe.currency,
+        },
+      }),
     });
     const data = await res.json();
+    console.log('onToken');
     console.log(data);
   }
 
@@ -18,13 +32,18 @@ class PayButton extends React.Component {
     return (
       <StripeCheckout
         name="Serverless Stripe Store Inc."
-        token={PayButton.onToken}
-        amount={100}
+        token={this.onToken}
+        amount={this.props.amount}
+        currency={config.stripe.currency}
         stripeKey={config.stripe.apiKey}
         allowRememberMe={false}
       />
     );
   }
 }
+
+PayButton.propTypes = {
+  amount: PropTypes.number.isRequired,
+};
 
 export default PayButton;
