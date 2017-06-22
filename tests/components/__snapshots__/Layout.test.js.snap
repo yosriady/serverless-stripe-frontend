@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders successfully 1`] = `
+<div>
+  <div
+    id="container"
+  >
+    <p>
+      Hello world
+    </p>
+  </div>
+</div>
+`;

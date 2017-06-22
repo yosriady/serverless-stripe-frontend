@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Index renders successfully 1`] = `
+<div>
+  <div
+    id="container"
+  >
+    <h1>
+      Serverless Stripe Checkout
+    </h1>
+    <p>
+      Use test@email.com, 4242 4242 4242 4242, and any CVC and future expiration date.
+    </p>
+    <button
+      className="StripeCheckout"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseUp={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(#28a0e5,#015e94)",
+          "border": 0,
+          "borderRadius": 5,
+          "boxShadow": "0 1px 0 rgba(0,0,0,0.2)",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "overflow": "hidden",
+          "padding": 1,
+          "textDecoration": "none",
+          "userSelect": "none",
+          "visibility": "visible",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4)",
+            "borderRadius": 4,
+            "boxShadow": "inset 0 1px 0 rgba(255,255,255,0.25)",
+            "color": "#fff",
+            "display": "block",
+            "fontFamily": "\\"Helvetica Neue\\",Helvetica,Arial,sans-serif",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "height": 30,
+            "lineHeight": "30px",
+            "padding": "0 12px",
+            "position": "relative",
+            "textShadow": "0 -1px 0 rgba(0,0,0,0.25)",
+          }
+        }
+      >
+        Pay With Card
+      </span>
+    </button>
+    <p>
+      <a
+        href="https://yos.io/2017/06/22/serverless-stripe/"
+      >
+        Read the blog post!
+      </a>
+    </p>
+  </div>
+</div>
+`;

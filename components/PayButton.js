@@ -12,8 +12,8 @@ class PayButton extends React.Component {
     this.onToken = this.onToken.bind(this);
   }
 
-  async onToken(token) {
-    const res = await fetch(config.stripe.apiUrl, {
+  async onToken(token) { // Token returned from Stripe
+    const res = await fetch(config.stripe.apiUrl, { // Backend API url
       method: 'POST',
       body: JSON.stringify({
         token,
@@ -24,7 +24,7 @@ class PayButton extends React.Component {
       }),
     });
     const data = await res.json();
-    console.log('onToken');
+    console.log('onToken'); // Logs for ease of debugging
     console.log(data);
   }
 
@@ -35,7 +35,7 @@ class PayButton extends React.Component {
         token={this.onToken}
         amount={this.props.amount}
         currency={config.stripe.currency}
-        stripeKey={config.stripe.apiKey}
+        stripeKey={config.stripe.apiKey} // Stripe publishable API key
         allowRememberMe={false}
       />
     );

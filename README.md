@@ -1,7 +1,11 @@
 # Serverless Stripe frontend
 
-The frontend application for a serverless stripe application.
+The frontend for a serverless stripe application.
 Built with Next.js and React.
+
+[Demo](https://serverless-stripe-frontend-xlknvwjjlv.now.sh)
+
+[Blog Post](https://yos.io/2017/06/22/serverless-stripe/)
 
 ## Setup
 

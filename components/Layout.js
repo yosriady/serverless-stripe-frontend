@@ -9,10 +9,10 @@ const Layout = props => (
       <style>{`
          html {
            height: 100%;
+           background: #F6F8FA;
          }
          #container {
            font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-           background: #F6F8FA;
            color: #4C555A;
            min-height: 100%;
            text-align: center;
