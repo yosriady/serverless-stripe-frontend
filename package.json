@@ -7,6 +7,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "eslint": "./node_modules/.bin/eslint ."
+  },
+  "devDependencies": {
+    "eslint": "3.19.0"
   }
 }

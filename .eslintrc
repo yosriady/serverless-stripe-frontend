@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": 0,
+      "react/jsx-filename-extension": 0
+    }
+}
