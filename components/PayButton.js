@@ -19,8 +19,9 @@ class PayButton extends React.Component {
       <StripeCheckout
         name="Serverless Stripe Store Inc."
         token={PayButton.onToken}
+        amount={100}
         stripeKey={config.stripe.apiKey}
-        allowRememberMe="false"
+        allowRememberMe={false}
       />
     );
   }
