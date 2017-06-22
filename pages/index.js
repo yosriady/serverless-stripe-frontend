@@ -1,11 +1,11 @@
-import Head from 'next/head';
+import Layout from '../components/Layout';
+import PayButton from '../components/PayButton';
 
 export default () => (
-  <div>
-    <Head>
-      <title>Serverless Stripe Example</title>
-      <script src="https://js.stripe.com/v3/" />
-    </Head>
-    <p> Welcome to next.js!</p>
-  </div>
+  <Layout>
+    <h1>Serverless Stripe Checkout</h1>
+    <p>Use 4242 4242 4242 4242 and any CVC and future expiration date</p>
+    <PayButton />
+    <p><a href="https://yos.io/articles">Read the blog post</a></p>
+  </Layout>
 );
