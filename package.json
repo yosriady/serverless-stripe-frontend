@@ -2,7 +2,7 @@
   "dependencies": {
     "isomorphic-unfetch": "^1.0.0",
     "next": "beta",
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.7.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-stripe-checkout": "^2.4.0"
